@@ -1,0 +1,117 @@
+/* Basic Reset & Body Styling */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif; /* Clean sans-serif font */
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+    font-size: 12px; /* Base font size */
+}
+
+.container {
+    max-width: 960px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+h1 {
+    font-size: 2.5em; /* Larger for main title */
+    color: #2c3e50;
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: bold; /* Bold */
+}
+
+.search-container {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#categorySearch {
+    width: 80%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1.1em;
+    font-weight: bold; /* Bold */
+}
+
+.schedule-container {
+    display: grid;
+    gap: 20px;
+}
+
+.talk-card {
+    background-color: #fdfdfd;
+    border: 1px solid #e0e0e0;
+    border-left: 5px solid #3498db; /* Accent color */
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-direction: column;
+}
+
+.talk-card.break {
+    border-left: 5px solid #f39c12; /* Different accent for breaks */
+    background-color: #fff8e1;
+}
+
+.talk-time {
+    font-size: 1.2em;
+    font-weight: bold; /* Bold */
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.talk-title {
+    font-size: 1.5em;
+    font-weight: bold; /* Bold */
+    color: #2c3e50;
+    margin-bottom: 5px;
+}
+
+.talk-speakers, .talk-categories {
+    font-size: 0.9em;
+    color: #777;
+    margin-bottom: 5px;
+}
+
+.talk-description {
+    font-size: 1em;
+    color: #555;
+    margin-top: 10px;
+}
+
+.talk-categories span {
+    background-color: #e9f5ff;
+    color: #3498db;
+    padding: 3px 8px;
+    border-radius: 3px;
+    margin-right: 5px;
+    font-size: 0.8em;
+    font-weight: bold; /* Bold */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .container {
+        margin: 10px;
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    #categorySearch {
+        width: 90%;
+    }
+
+    .talk-title {
+        font-size: 1.3em;
+    }
+}
